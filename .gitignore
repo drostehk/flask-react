@@ -1,0 +1,15 @@
+*.log
+*.pot
+*.pyc
+*.sql
+*.retry
+*.db
+env
+*/__pycache__/*
+*/node_modules/*
+*/instance/*
+*/.ipynb_checkpoints/*
+.cache
+.coverage
+.eggs
+*/*.egg-info
