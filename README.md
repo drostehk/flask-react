@@ -1,7 +1,8 @@
 Flask & Reactjs
 ===============
 
-# What is this?
+
+[![Build Status](https://travis-ci.org/krahser/flask-react.svg?branch=master)](https://travis-ci.org/krahser/flask-react)
 
 This project is for create the structure of a new application with the following architecture.
 My personal goal is understand and apply the test driven development process.
