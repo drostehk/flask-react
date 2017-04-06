@@ -3,7 +3,10 @@ Flask & Reactjs
 
 # What is this?
 
-This project is for create the structure of a new application with the following architecture. My personal goal is understand and apply the test driven development process.
+This project is for create the structure of a new application with the following architecture.
+My personal goal is understand and apply the test driven development process.
+I want to develop web applications that send the complete html document only a few times, and use AJAX to
+build the User eXperience.
 
 ## Backend
 - Flask as html provider and api backend
