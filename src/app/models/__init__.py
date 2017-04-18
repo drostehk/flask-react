@@ -1,5 +1,6 @@
 from app.database import db
-from flask_security.utils import hash_password
+# TODO: remove alias when flask-security-fork release a new version
+from flask_security.utils import encrypt_password as hash_password
 
 
 def init_db(user_datastore):
