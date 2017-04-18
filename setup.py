@@ -32,9 +32,8 @@ tests_require = [
     'pytest-flakes>=1.0.1',
     'pytest-flask>=0.10.0',
     'pytest-pep8>=1.0.6',
-    'pytest>=3.0.5',
+    'pytest>=2.6.4',
     'Flask-SQLAlchemy>=2.2',
-    'py>=1.4.29'
 ]
 
 setup(
