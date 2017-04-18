@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    test_auth
+    ~~~~~~~~~~~~~~
+
+    Authentication tests
+"""
+
+
 def test_index(client):
     assert client.get('/').status_code == 302
 

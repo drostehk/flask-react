@@ -3,6 +3,7 @@ from app.models.user import get_datastore, get_users
 from flask import Flask, render_template
 from flask_wtf.csrf import CSRFProtect
 from flask_security import Security, login_required, roles_required
+from app.views import register_views
 
 
 def create_app(config='Base', instance=True):
@@ -24,6 +25,9 @@ def create_app(config='Base', instance=True):
     db.init_app(app)
     user_datastore = get_datastore(db)
     app.security = Security(app, user_datastore)
+
+    # Register views
+    register_views(app)
 
     @app.before_first_request
     def init_db():
