@@ -70,3 +70,13 @@ def get_users():
         user = User.query.filter(User.username == each.username).first()
         users_info['users'].append(user.get_setup())
     return users_info
+
+
+def get_user(id):
+    if id == 0:
+        return User()
+    return User.query.get(id)
+
+
+def get_username(username):
+    return User.query.filter(User.username == username).first()
