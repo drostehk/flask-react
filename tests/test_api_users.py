@@ -1,31 +1,35 @@
 # -*- coding: utf-8 -*-
 """
-    test_api_users
+    test_users
     ~~~~~~~~~~~~~~
 
-    API users tests
+    Users managment tests
 """
 
 
-from utils import authenticate, json_of_response, logout
-
-
 def test_get_users(client):
-    default_users = {'users':
-                     [
-                         {'admin': True,
-                          'email': 'admin@tuto.app',
-                          'key': 1,
-                          'username': 'admin'},
-                         {'admin': False,
-                          'email': 'user@tuto.app',
-                          'key': 2,
-                          'username': 'user'}
-                     ]}
-    authenticate(client)
-    response = client.get(
-        '/api/user/list/',
-    )
-    logout
-    assert response.status_code == 200
-    assert json_of_response(response) == default_users
+    client.get('/api/user/get_users')
+
+
+def test_get_user(client):
+    client.get('/api/user/get')
+
+
+def test_add_user(client):
+    client.post('/api/user/add/')
+
+
+def test_change_user(client):
+    client.post('/api/user/modify')
+
+
+def test_change_password(client):
+    client.post('/api/user/password')
+
+
+def test_change_admin(client):
+    client.post('/api/user/admin')
+
+
+def test_delete_user(client):
+    client.post('/api/user/delete/')
