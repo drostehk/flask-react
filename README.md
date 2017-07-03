@@ -3,6 +3,7 @@ Flask & Reactjs
 
 
 [![Build Status](https://travis-ci.org/krahser/flask-react.svg?branch=master)](https://travis-ci.org/krahser/flask-react)
+[![Coverage Status](https://coveralls.io/repos/github/krahser/flask-react/badge.svg?branch=master)](https://coveralls.io/github/krahser/flask-react?branch=master)
 
 This project is for create the structure of a new application with the following architecture.
 My personal goal is understand and apply the test driven development process.
