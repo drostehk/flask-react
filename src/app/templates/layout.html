@@ -2,15 +2,19 @@
 <html>
 <head>
   <title>App</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"/>
-
+  <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"/>  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='semantic.min.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     {% block head %}
     {% endblock %}
 </head>
 <body>
     <div id="content">
       {% block content %}
-      Loading ...
+      <div class="ui loading segment">
+        <p></p>
+        <p></p>
+      </div>
       {% endblock %}
     </div>
     {% block scripts %}
