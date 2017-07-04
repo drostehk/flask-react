@@ -11,7 +11,7 @@ RUN chown -R deploy /home/deploy/app
 
 RUN python setup.py install
 
-USER djbot
+USER deploy
 
 #Logs
 RUN mkdir -p /home/deploy/log
