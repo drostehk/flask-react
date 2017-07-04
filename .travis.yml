@@ -9,7 +9,7 @@ install:
   - python setup.py install
   - pip install coverage coveralls
 # command to run tests
-script: coverage run setup.py test
+script: python setup.py test
 
 after_success:
   - coveralls
