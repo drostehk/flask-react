@@ -15,8 +15,9 @@ install:
 
 # command to run tests
 script:
-  - python setup.py test
-  - cd src/app/reactjs && npm run test
+  - npm run test
+  - cd ../../../ && python setup.py test
+
 
 
 after_success:
