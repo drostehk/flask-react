@@ -13,7 +13,7 @@ build the User eXperience.
 ## Backend
 - Flask as html provider and api backend
 - Flask-SQLAlchemy to store relational models
-- Flask-Security-Fork to complete the basic authentication (hoping that in a short time it merges with Flask-Security)
+- Flask-Security
 - Pytest
 
 ## Frontend

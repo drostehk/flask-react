@@ -8,7 +8,7 @@ readme = 'Flask & ReactJS Boilerplate'
 # open('README.rst').read()
 
 install_requires = [
-    "Flask-Security-fork",
+    "Flask-Security",
     "Flask-SQLAlchemy",
     "Flask",
     "bcrypt",
