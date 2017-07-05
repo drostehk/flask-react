@@ -11,11 +11,11 @@ install:
   - nvm install node
   - python setup.py install
   - pip install coveralls
-  - cd src/app/reactjs && npm install
+  - cd src/app/reactjs && nvm run npm install
 
 # command to run tests
 script:
-  - npm run test
+  - nvm run npm run test
   - cd ../../../ && python setup.py test
 
 
