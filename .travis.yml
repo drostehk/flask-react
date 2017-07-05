@@ -16,7 +16,7 @@ install:
 # command to run tests
 script:
   - npm run test
-  - cd ${HOME}/flask-react && python setup.py test
+  - cd ../../../ && python setup.py test
 
 
 
