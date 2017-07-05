@@ -79,22 +79,6 @@ def user_change_admin():
     return jsonify({'message': 'failed'})
 
 
-@user_bp.route('/change_password/', methods=['POST'])
-@roles_required('admin')
-def user_change_password():
-    form = Change(request.form)
-    if form.validate_on_submit():
-
-        user = get_username(current_user.username)
-        if verify_password(form.old.data, user):
-            user = get_user(form.key.data)
-            user.password = encrypt_password(form.password.data)
-            db.session.commit()
-            return jsonify({'message': 'saved'})
-        return jsonify({'message': 'wrong password!'})
-    return jsonify({'message': 'failed'})
-
-
 @user_bp.route('/delete/', methods=['POST'])
 @roles_required('admin')
 def user_delete():
